@@ -14,7 +14,7 @@ class Filemanager():
         self.__updatefiles()
 
     def __repr__(self):
-        return f"Working Directory -> {self.workingdirectory} | #Files: {len(self.files)} | File Extensions: {self.extensions}"
+        return f"Filemanager({self.workingdirectory} | #Files: {len(self.files)} | File Extensions: {self.extensions})"
     
     def __iter__(self):
         self._fileindex = 0

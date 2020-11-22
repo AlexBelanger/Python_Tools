@@ -38,7 +38,7 @@ class File():
 
 
     def __repr__(self):
-        return f"{self.filename} | {self.file}" 
+        return f"File({self.filename} | {self.file})" 
     
     def __str__(self):
         return f"{self.filename}"
@@ -94,5 +94,5 @@ class File():
                 if Purge:
                     os.replace(self.file, os.path.join(self.abspath,newname))
             self.filename = newname
-            self.revision = -1
+            self.revision = 0
 
